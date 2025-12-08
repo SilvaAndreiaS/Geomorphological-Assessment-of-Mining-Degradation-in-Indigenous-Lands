@@ -17,20 +17,9 @@ Embora o garimpo tenha registrado um declínio na abertura de novas áreas em 20
 ---
 
 ### 🎥 Expansão do Garimpo na Bacia do Tapajós (1985–2023)
+### Demonstração do Projeto
+
+[▶️ Clique para Assistir ao Vídeo de Monitoramento Florestal]([URL_DO_SEU_VÍDEO_NO_YOUTUBE_OU_VIMEO)](https://youtu.be/t6bVL8WEKt8)
 
 [**Aqui você insere o código de embed do vídeo (ex.: YouTube ou Vimeo) que mostra o timelapse da expansão.**]
 
----
-
-## II. Abordagem Metodológica
-
-[Esta seção deve detalhar a **Integração Multissensorial** e o **Modelo Semântico/Regras Geoespaciais**.]
-
-## III. Resultados e Produtos Cartográficos
-
-[Esta seção deve listar os *shapefiles*, mapas de risco e relatórios gerados.]
-
-## IV. Instalação e Requisitos
-
-[Instruções sobre como clonar o repositório e rodar os scripts de processamento (Ex.: Google Earth Engine, Python, QGIS).]
-[Veja o vídeo de demonstração do monitoramento florestal](URL_DO_VÍDEO_HOSPEDADO)
