@@ -22,11 +22,3 @@ Embora o garimpo tenha registrado um declínio na abertura de novas áreas em 20
 
 [▶️ Assista à Demonstração do Monitoramento Florestal](https://youtu.be/t6bVL8WEKt8)
 
-### Download do Vídeo
-
-Para baixar o vídeo original de alta qualidade:
-
-* [📥 Baixar Vídeo (MP4, XX MB)](LINK_DIRETO_PARA_O_DOWNLOAD_NO_DRIVE_OU_DROPBOX)
-
----
-*Você também pode assistir ao vídeo no YouTube aqui: [Assista no YouTube](https://youtu.be/t6bVL8WEKt8)*
