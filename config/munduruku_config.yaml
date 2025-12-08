@@ -1,0 +1,201 @@
+# Configuração do Projeto de Mapeamento de Garimpo - Terra Indígena Munduruku
+# Bacia do Rio Tapajós, Pará, Brasil
+
+study_area:
+  name: "Terra Indígena Munduruku"
+  region: "Bacia do Rio Tapajós"
+  state: "Pará"
+  country: "Brasil"
+  
+  # Coordenadas aproximadas da região (ajustar conforme necessário)
+  bounding_box:
+    min_lon: -58.5
+    max_lon: -56.5
+    min_lat: -8.0
+    max_lat: -6.0
+  
+  # Sistema de coordenadas
+  crs: "EPSG:4326"  # WGS84
+  utm_zone: "21S"
+
+satellite_data:
+  # Fontes de dados de satélite
+  sources:
+    - name: "Sentinel-2"
+      resolution: 10  # metros
+      bands: ["B02", "B03", "B04", "B08", "B11", "B12"]
+      
+    - name: "Landsat-8"
+      resolution: 30  # metros
+      bands: ["B2", "B3", "B4", "B5", "B6", "B7"]
+      
+  # Período de análise
+  date_range:
+    start: "2020-01-01"
+    end: "2024-12-31"
+  
+  # Critérios de qualidade
+  cloud_coverage_max: 20  # porcentagem máxima de cobertura de nuvens
+
+preprocessing:
+  # Correções atmosféricas
+  atmospheric_correction: true
+  
+  # Normalização radiométrica
+  radiometric_normalization: true
+  
+  # Correção topográfica
+  topographic_correction: true
+  
+  # Remoção de nuvens e sombras
+  cloud_shadow_removal: true
+  
+  # Mosaico temporal
+  temporal_compositing:
+    method: "median"  # ou "mean", "max"
+    period: "quarterly"  # ou "monthly", "annual"
+
+classification:
+  # Abordagem híbrida
+  hybrid_approach:
+    # Métodos tradicionais
+    traditional:
+      - method: "supervised_classification"
+        algorithm: "maximum_likelihood"
+      
+      - method: "unsupervised_classification"
+        algorithm: "kmeans"
+        n_clusters: 10
+      
+      - method: "spectral_indices"
+        indices:
+          - "NDVI"  # Vegetação
+          - "NDWI"  # Água
+          - "NDMI"  # Mineração
+          - "BSI"   # Solo exposto
+    
+    # Métodos de Machine Learning
+    machine_learning:
+      - algorithm: "random_forest"
+        n_estimators: 100
+        max_depth: 20
+        
+      - algorithm: "xgboost"
+        n_estimators: 100
+        learning_rate: 0.1
+        
+      - algorithm: "svm"
+        kernel: "rbf"
+        C: 1.0
+    
+    # Ensemble (combinação de métodos)
+    ensemble:
+      method: "voting"  # ou "stacking", "weighted_average"
+      weights: [0.3, 0.7]  # [tradicional, ML]
+
+detection:
+  # Detecção de cicatrizes de garimpo
+  mining_scars:
+    # Classes de interesse
+    target_classes:
+      - "garimpo_ativo"
+      - "garimpo_abandonado"
+      - "area_desmatada"
+      - "solo_exposto"
+    
+    # Características espectrais típicas
+    spectral_signature:
+      high_reflectance: ["red", "nir"]
+      low_reflectance: ["blue", "green"]
+    
+    # Características morfológicas
+    morphology:
+      min_area: 100  # m²
+      max_area: 1000000  # m²
+      shape_complexity: "irregular"
+    
+    # Contexto espacial
+    spatial_context:
+      proximity_to_rivers: true
+      proximity_to_roads: true
+      distance_threshold: 500  # metros
+
+monitoring:
+  # Monitoramento temporal
+  change_detection:
+    method: "multi_temporal_analysis"
+    baseline_year: 2020
+    comparison_periods: ["2021", "2022", "2023", "2024"]
+    
+    # Tipos de mudança a detectar
+    change_types:
+      - "nova_area_garimpo"
+      - "expansao_garimpo"
+      - "retracao_garimpo"
+      - "recuperacao_area"
+    
+    # Threshold de mudança
+    change_threshold: 0.15  # 15% de mudança espectral
+  
+  # Alertas
+  alerts:
+    generate_alerts: true
+    alert_threshold: 1000  # m² de nova área de garimpo
+    notification_email: "alerts@projeto-munduruku.br"
+
+validation:
+  # Validação dos resultados
+  accuracy_assessment:
+    method: "stratified_random_sampling"
+    sample_size: 300
+    train_test_split: 0.7
+  
+  # Métricas
+  metrics:
+    - "overall_accuracy"
+    - "kappa_coefficient"
+    - "precision"
+    - "recall"
+    - "f1_score"
+    - "confusion_matrix"
+
+output:
+  # Formatos de saída
+  formats:
+    - "GeoTIFF"
+    - "Shapefile"
+    - "GeoJSON"
+    - "KML"
+  
+  # Produtos gerados
+  products:
+    - "classification_maps"
+    - "change_detection_maps"
+    - "time_series_analysis"
+    - "mining_scar_inventory"
+    - "statistical_reports"
+    - "visualization_dashboards"
+  
+  # Diretório de saída
+  output_dir: "results/munduruku"
+  
+  # Resolução espacial dos produtos
+  output_resolution: 10  # metros
+
+visualization:
+  # Visualização dos resultados
+  map_style:
+    color_scheme:
+      garimpo_ativo: "#FF0000"
+      garimpo_abandonado: "#FFA500"
+      floresta: "#00FF00"
+      agua: "#0000FF"
+      solo_exposto: "#8B4513"
+  
+  # Relatórios
+  reports:
+    format: "PDF"
+    include_maps: true
+    include_statistics: true
+    include_temporal_analysis: true
+    language: "pt-BR"
