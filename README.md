@@ -33,3 +33,4 @@ Embora o garimpo tenha registrado um declínio na abertura de novas áreas em 20
 ## IV. Instalação e Requisitos
 
 [Instruções sobre como clonar o repositório e rodar os scripts de processamento (Ex.: Google Earth Engine, Python, QGIS).]
+[Veja o vídeo de demonstração do monitoramento florestal](URL_DO_VÍDEO_HOSPEDADO)
