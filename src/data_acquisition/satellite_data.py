@@ -157,7 +157,7 @@ class SatelliteDataAcquisition:
         height: int
     ) -> Tuple[np.ndarray, any]:
         """
-        Reprojetaimagem para um sistema de coordenadas diferente
+        Reprojeta imagem para um sistema de coordenadas diferente
         
         Args:
             data: Array de dados da imagem
@@ -170,9 +170,13 @@ class SatelliteDataAcquisition:
         Returns:
             Tupla (dados_reprojetados, nova_transformação)
         """
+        # Obtém bounds da imagem de origem
+        from rasterio.transform import array_bounds
+        bounds = array_bounds(height, width, src_transform)
+        
         # Calcula a transformação para o novo CRS
         dst_transform, dst_width, dst_height = calculate_default_transform(
-            src_crs, dst_crs, width, height, *src_transform
+            src_crs, dst_crs, width, height, *bounds
         )
         
         # Cria array de destino
