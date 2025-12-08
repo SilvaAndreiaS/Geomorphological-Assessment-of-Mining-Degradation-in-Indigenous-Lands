@@ -13,6 +13,7 @@ O território Munduruku é classificado como o **segundo território indígena c
 * **Impacto Hídrico:** O **Rio Cabitutu** é o corpo hídrico mais impactado pelo garimpo dentro da TI Munduruku, sublinhando a necessidade de análise fluvial e de risco de contaminação por mercúrio.
 
 Embora o garimpo tenha registrado um declínio na abertura de novas áreas em 2023 (caindo de 430,9 ha em 2022 para 152 ha em 2023), a área total devastada exige um monitoramento contínuo e preciso. O mapeamento detalhado das cicatrizes de garimpo é um **subsídio direto à proteção territorial** e ao combate eficaz às invasões e aos danos socioambientais, fornecendo dados cruciais para as ações de fiscalização.
+<img width="1268" height="1268" alt="image" src="https://github.com/user-attachments/assets/79c0bf9d-2d17-43d8-99ba-5d7403f034c4" />
 
 ---
 
