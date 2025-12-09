@@ -1,5 +1,5 @@
 # Mapeamento Híbrido de Risco e Cicatrizes de Garimpo: Subsídio à Proteção da TI Munduruku
-
+![Status do Projeto](https://img.shields.io/badge/Status-Em_Desenvolvimento-blue)
 ## I. Visão Geral do Projeto
 
 O principal objetivo deste projeto é desenvolver e aplicar uma **abordagem híbrida** de processamento de imagens de Sensoriamento Remoto para o **mapeamento e monitoramento precisos** das cicatrizes de garimpo ilegal na Terra Indígena (TI) Munduruku, localizada na Bacia do Rio Tapajós, no estado do Pará.
@@ -20,6 +20,4 @@ Embora o garimpo tenha registrado um declínio na abertura de novas áreas em 20
 ### 🎥 Expansão do Garimpo na Bacia do Tapajós (1985–2023)
 ### Demonstração do Projeto
 
-
-[▶️ Assista à Demonstração do Monitoramento Florestal](https://youtu.be/t6bVL8WEKt8)
 
