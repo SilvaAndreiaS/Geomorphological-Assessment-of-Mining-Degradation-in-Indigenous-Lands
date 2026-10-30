@@ -103,6 +103,10 @@ $$Risco = (Dist\hat{a}ncia_{Garimpo} \times 0.4) + (Área_{Devastada\_Buffer\_5k
 | A15 | Aldeia Yuivi | 5.0 km | 25 ha | Baixo | **BAIXO** |
 
 ---
+**Pontos a revisar antes de publicar:**
+> - Os graus do relatório não seguem exatamente o índice calculado. Por exemplo, A07 (0,567, grau Médio) pontua acima de A05 (0,544, grau Alto), e A03 (0,795) acima de A02 (0,782). Documente se houve ajuste manual e defina limiares fixos por classe (o script usa quartis, que são provisórios).
+> - A02: Sawré Muybu é uma Terra Indígena distinta, adjacente à TI Munduruku. Confirme se o nome se refere a uma aldeia e qual a fonte.
+> - Confirme com as lideranças e com a fonte oficial a lista, a grafia e as distâncias das aldeias.
 
 ## 5. Plano de Ação e Proteção Territorial (Recomendações)
 
