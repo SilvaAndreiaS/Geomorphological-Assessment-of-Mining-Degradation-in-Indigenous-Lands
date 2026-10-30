@@ -1,0 +1,16 @@
+ID,Nome_Aldeia,Proximidade_Garimpo_km,Area_Garimpo_Buffer_5km_ha,Risco_Hidrico,Grau_Risco
+A01,Aldeia Cabitutu,0.3,420,Crítico,MUITO ALTO
+A02,Aldeia Sawré Muybu (Entorno),0.8,310,Alto,MUITO ALTO
+A03,Aldeia A03,1.1,280,Crítico,MUITO ALTO
+A04,Aldeia Karapanatuba,1.4,210,Alto,ALTO
+A05,Aldeia Praia do Mangue,1.8,195,Médio,ALTO
+A06,Aldeia Praia do Índio,2.1,160,Médio,MÉDIO
+A07,Aldeia Poxisol,2.5,140,Crítico,ALTO
+A08,Aldeia Daudip,2.8,125,Alto,MÉDIO
+A09,Aldeia Posto Dawa,3.2,90,Médio,MÉDIO
+A10,Aldeia Caroebak,3.5,85,Baixo,BAIXO
+A11,Aldeia Tropas,3.9,70,Alto,MÉDIO
+A12,Aldeia Kadiriri,4.1,55,Baixo,BAIXO
+A13,Aldeia Datik,4.5,40,Baixo,BAIXO
+A14,Aldeia Waro,4.8,35,Baixo,BAIXO
+A15,Aldeia Yuivi,5.0,25,Baixo,BAIXO
