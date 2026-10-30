@@ -110,9 +110,7 @@ $$Risco = (Dist\hat{a}ncia_{Garimpo} \times 0.4) + (Área_{Devastada\_Buffer\_5k
 2. **Alertas em Tempo Real via SAR (Sentinel-1):** Ativação de rotina computacional em nuvem (Google Earth Engine) para processamento quinzenal de coerência interferométrica, detectando novas pistas de pouso e cavas ativas independentemente de nuvens.
 3. **Plano de Descontaminação e Monitoramento em Saúde:** Coleta de amostras de cabelo da população indígena nas 15 aldeias listadas, priorizando as comunidades de risco **MUITO ALTO** e **ALTO** para rastreamento de contaminação por $Hg$.
 4. **Reflorestamento de Áreas Degradadas:** Protocolo de biorremediação e plantio de espécies nativas acumuladoras de metais pesados nas cavas abandonadas do Rio Cabitutu.
-```
-![Área de Garimpo Ilegal e Contaminação Fluvial na TI Munduruku](imagem_garimpo.jpg)
-```
+
 
 ### Resumo do Conteúdo Disponibilizado
 - **Diagnóstico Diagnostico-Ambiental Completo:** Estruturado com a análise temporal de 2019 a 2023 (5,6 mil ha destruídos do total de 7 mil ha acumulados).
